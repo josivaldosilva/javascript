@@ -1,24 +1,25 @@
-function red() {
-    let body = document.querySelector("body");
+let body = document.querySelector("body");
+
+let txt = document.querySelector("P");
+
+let btnred = document.getElementById("btnred");
+
+ btnred.addEventListener('click', redBtn);
+
+
+function redBtn() {
     body.style.backgroundColor = ("red");
 
-    let text = document.getElementById("paragraph").innerHTML = "Background Color : Red";
-    
+    txt.innerHTML = "Background Color : Red"; 
 };
 
-/*var btnred = document.getElementById("btnred");
 
-btnred.addEventListener("click", red());*/
+let dblueBtn = document.getElementById("btnblue");
 
+    dblueBtn.addEventListener('click', darkblueBtn);
 
-function blue() {
-    let body = document.querySelector("body");
-    body.style.backgroundColor = ("blue");
+function darkblueBtn() {
+    body.style.backgroundColor = ("darkblue")
 
-    let text = document.getElementById("paragraph").innerHTML = "Background Color :  Blue";
-    
+    txt.innerHTML = "Background Color : Darkblue"
 }
-
-/*let btnblue = document.getElementById("btnblue");
-
-btnblue.addEventListener('click', blue());*/
