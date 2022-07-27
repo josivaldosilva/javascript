@@ -6,8 +6,9 @@ body, html {
 }
 
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -38,9 +39,14 @@ padding: 0;
     background: transparent;
     border: .3px solid ;
     border-radius: 5px;
+    text-transform: uppercase;  
+    transition: border .3s transform .3s;
+}
+
+.btn:hover {
     cursor: pointer;
-    text-transform: uppercase;
-    
+    border: 5px solid #fff;
+    transform: translate(-3%, -3%);
 }
 
 #btnred {
