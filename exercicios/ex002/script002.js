@@ -1,16 +1,16 @@
-var myName = "Josivaldo";
+// O let e o var permitem que você altere o valor da variável sempre que quiseres
 
-let firstUndefined;
+// E isso pode ser um grande problema caso você altere sem querer um variável indesejada.
 
-const myFistNumber = 10;
+let valorIngressoAdulto = 20;
+valorIngressoAdulto = 30;
 
+console.log(valorIngressoAdulto);
 
-console.log(myName);
-console.log(firstUndefined);
-console.log(myFistNumber);
+// Para evitar um problema desse tipo foi imprementado o const
 
+// Os valores atribuido a variáveis definidas com a palavra-chave const não podem ser alterados.
 
-let hamburguer = [["Pão", 10], ['hamburguer', 16], ["Maionese", 2], ["Ketchup", 3]];
+const myConst = "Olá mundo";
+console.log(myConst);~
 
-
-console.log(hamburguer[2][0]);

@@ -8,4 +8,8 @@ w
 
 //Dizemos ao JavaScript para criar ou declarar uma variável colocando a palavra-chave var na frente dela, dessa forma:
 
-var name;
+let name = "Josivaldo";
+let height = 171;
+let age = 23;
+
+console.log(name + " " + height + " " + age);
