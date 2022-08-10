@@ -4,10 +4,11 @@
 
 const verificarVelocidade = (velocidade) => {
     const velocidadeMaxima = 70;
+    const pontosPorKm = 5;
     if (velocidade <= velocidadeMaxima)
         console.log('Ok');
     else {
-        const pontos = Math.floor(((velocidade - velocidadeMaxima) / 5));
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / pontosPorKm));
         if (pontos >= 12) 
             console.log('Carteira suspensa');
         else 
