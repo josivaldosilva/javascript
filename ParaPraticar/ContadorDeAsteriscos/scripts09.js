@@ -6,13 +6,14 @@
 function exibirAsteriscos(linhas) {
     let padrao = '';
     let line = 1;
-    while(line <= linhas) {
+    do {
         padrao += '*';
         console.log(padrao);
     
         line++;
     }
+    while(line <= linhas)
 
 }
 
-exibirAsteriscos(10   );
+exibirAsteriscos(10);
